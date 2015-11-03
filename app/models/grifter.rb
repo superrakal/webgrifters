@@ -4,7 +4,7 @@ class Grifter
   require 'net/http'
   require 'uri'
 
-  before_save :set_photo
+  before_save :set_photo, :set_searching_fields
 
   field :vk_screen_name
   field :photo
@@ -13,11 +13,20 @@ class Grifter
   field :first_name
   field :last_name
 
+  field :search_first_name
+  field :search_last_name
+  field :search_vk_screen_name
 
   field :description
   field :is_confirmed, type:Boolean, default: false
 
   belongs_to :user
+
+  def set_searching_fields
+    self.search_first_name = self.first_name.mb_chars.downcase.to_s
+    self.search_last_name = self.last_name.mb_chars.downcase.to_s
+    self.search_vk_screen_name = self.vk_screen_name.mb_chars.downcase.to_s
+  end
 
   def set_photo
     if self.vk_screen_name.present?
