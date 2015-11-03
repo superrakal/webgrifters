@@ -7511,3 +7511,82 @@ SourcemapConcat (3)                           | 66ms (22 ms)
 Babel (6)                                     | 56ms (9 ms)         
 Concat: Test Support JS (1)                   | 52ms                
 
+file changed mixins/session.coffee
+
+Build successful - 445ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 116ms               
+Concat: App                                   | 61ms                
+Concat: Test Support JS                       | 25ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 116ms               
+Concat: App (1)                               | 61ms                
+SourcemapConcat (3)                           | 45ms (15 ms)        
+Concat: Test Support JS (1)                   | 25ms                
+TreeMerger (180)                              | 24ms (0 ms)         
+
+file added mixins/session.coffee___jb_old___
+file changed mixins/session.coffee
+file deleted mixins/session.coffee___jb_old___
+
+Build successful - 523ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 135ms               
+SourcemapConcat                               | 92ms                
+Concat: Test Support JS                       | 38ms                
+SourcemapConcat                               | 33ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 135ms               
+SourcemapConcat (3)                           | 128ms (42 ms)       
+Concat: Test Support JS (1)                   | 38ms                
+TreeMerger (180)                              | 27ms (0 ms)         
+
+file changed mixins/session.coffee
+
+Build successful - 518ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 138ms               
+Funnel: App JS Files                          | 99ms                
+Concat: Test Support JS                       | 28ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 138ms               
+Funnel: App JS Files (1)                      | 99ms                
+SourcemapConcat (3)                           | 47ms (15 ms)        
+Concat: Test Support JS (1)                   | 28ms                
+TreeMerger (180)                              | 27ms (0 ms)         
+
+file added mixins/session.coffee___jb_bak___
+file deleted mixins/session.coffee___jb_bak___
+file added mixins/session.coffee___jb_old___
+file changed mixins/session.coffee
+file deleted mixins/session.coffee___jb_old___
+
+Build successful - 454ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 116ms               
+ES6: App Tree                                 | 63ms                
+Concat: Test Support JS                       | 32ms                
+SourcemapConcat                               | 24ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 116ms               
+ES6: App Tree (1)                             | 63ms                
+SourcemapConcat (3)                           | 49ms (16 ms)        
+Concat: Test Support JS (1)                   | 32ms                
+TreeMerger (180)                              | 27ms (0 ms)         
+
