@@ -1,0 +1,13 @@
+.admin_form.text-center
+  a href='/'
+    h1.text-uppercase webgrifters.ru
+  h2.text-uppercase Админпанель
+  = form_for(resource, as: resource_name, url: session_path(resource_name), :html => {:id => "new_user"}) do |f|
+    = devise_error_messages!
+    .form-group
+      = f.email_field :email, :placeholder => "e-mail"
+    .form-group
+      = f.password_field :password, :placeholder => "Пароль"
+    .actions
+      button.button-violet.button-block type='submit'
+        |Войти

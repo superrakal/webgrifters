@@ -10,11 +10,12 @@ class Grifter
   field :photo
   field :vk_id
   field :skype_id
-
   field :first_name
   field :last_name
 
+
   field :description
+  field :is_confirmed, type:Boolean, default: false
 
   belongs_to :user
 
@@ -35,7 +36,10 @@ class Grifter
       response = http.request(Net::HTTP::Get.new(uri.request_uri))
       json = JSON.parse(response.body)["response"][0]
       self.photo = json["photo_big"]
+    else
+      self.photo = "http://bakubusinessconsulting.com/ru/wp-content/uploads/2014/11/User-Default.jpg"
     end
+
   end
 
   validates_presence_of :first_name, :last_name, :description

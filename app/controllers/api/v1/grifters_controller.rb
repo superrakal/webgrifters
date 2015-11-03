@@ -8,9 +8,9 @@ module Api
 
       def index
         if params[:search].present?
-          @grifters = Grifter.all.order_by(created_at: 'desc').any_of({vk_screen_name: params[:search]}, {first_name: params[:search]}, {last_name: params[:search]})
+          @grifters = Grifter.where(is_confirmed: true).order_by(created_at: 'desc').any_of({vk_screen_name: params[:search]}, {first_name: params[:search]}, {last_name: params[:search]})
         else
-          @grifters = Grifter.all.order_by(created_at: 'desc')
+          @grifters = Grifter.where(is_confirmed: true).order_by(created_at: 'desc')
         end
         @grifters = @grifters.page(params[:page]).per(params[:per_page])
         respond_with @grifters, meta: {total_pages: @grifters.total_pages}

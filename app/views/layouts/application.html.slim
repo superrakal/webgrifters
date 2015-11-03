@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title WebGrifters - База мошенников в веб-разработке
+    meta name="description" content="WebGrifters - Сайт, который вам поможет узнать о мошенниках и кидалах веб-разработки"
+    meta name="author" content="ev1lcap">
+
+    = stylesheet_link_tag    'application', media: 'all' 
+    = javascript_include_tag 'application' 
+    = csrf_meta_tags
+  body
+    = yield 
