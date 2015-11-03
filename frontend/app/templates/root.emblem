@@ -3,10 +3,11 @@
     h1.page-title Список мошенников в сфере веб-разработки
     p.page-description Проверьте разработчика, заказчика или добавьте нового "кидалу".
     .search-box
-      button.button-violet
-        i.fa.fa-search
-      .input-wrapper
-        input type='text' placeholder='Поиск по vk_id, имени и фамилии'
+      form{action 'search' on='submit'}
+        button.button-violet type=submit
+          i.fa.fa-search
+        .input-wrapper
+          = input value=controller.search_scope type='text' placeholder='Поиск по vk_id, имени или фамилии'
   .row
     .page-content
       .grifters
@@ -31,8 +32,14 @@
               hr
               .additional-links
                 .pull-left
-                  button.button-violet.button-small Подробнее
+                  = link-to 'grifter' grifter.id
+                    button.button-violet.button-small Подробнее
                 .pull-right
+                  = if grifter.skype_id.length
+                    span.skype_id
+                      i.fa.fa-skype
+                      |&nbsp;
+                      = grifter.skype_id
                   a href="http://vk.com/#{grifter.vk_screen_name}" target="_blank"
                     i.fa.fa-vk
                     |Профиль

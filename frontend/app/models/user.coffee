@@ -5,6 +5,5 @@ User = DS.Model.extend
   vk_photo:       DS.attr 'string'
   first_name:     DS.attr 'string'
   last_name:      DS.attr 'string'
-  description:    DS.attr 'string'
 
 `export default User`

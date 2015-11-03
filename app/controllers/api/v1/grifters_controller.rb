@@ -7,7 +7,12 @@ module Api
       respond_to :json
 
       def index
-        @grifters = Grifter.all.order_by(created_at: 'desc').page(params[:page]).per(params[:per_page])
+        if params[:search].present?
+          @grifters = Grifter.all.order_by(created_at: 'desc').any_of({vk_screen_name: params[:search]}, {first_name: params[:search]}, {last_name: params[:search]})
+        else
+          @grifters = Grifter.all.order_by(created_at: 'desc')
+        end
+        @grifters = @grifters.page(params[:page]).per(params[:per_page])
         respond_with @grifters, meta: {total_pages: @grifters.total_pages}
       end
 

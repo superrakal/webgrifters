@@ -3,8 +3,12 @@
 
 RootRoute = Ember.Route.extend InfinityRoute,
 
-  model: ->
-    @infinityModel("grifter", { perPage: 5, startingPage: 1 })
+  queryParams:
+    search:
+      refreshModel: true
+
+  model: (params)->
+    @infinityModel("grifter", { perPage: 5, startingPage: 1, search: params["search"]})
 
   setupController: (controller, model) ->
     controller.set 'model', model

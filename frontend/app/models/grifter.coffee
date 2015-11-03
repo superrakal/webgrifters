@@ -12,15 +12,15 @@ Grifter = DS.Model.extend
   user:        DS.belongsTo 'user', async: true
 
   short_description: (->
-    if @get('description').length > 50
-      @get('description').substr(0, 50)+'...'
+    if @get('description').length > 100
+      @get('description').substr(0, 100)+'...'
     else
       @get('description')
   ).property('description')
 
   formatted_created_at: (->
     date = @get 'created_at'
-    format = "Do MMM YY"
+    format = "Do MMMM YYYY"
     moment(date).locale('ru').format format
   ).property('created_at')
 

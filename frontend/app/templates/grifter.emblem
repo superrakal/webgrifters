@@ -1,0 +1,39 @@
+.container
+  .page-header
+    h1.page-title
+      = model.first_name
+      |&nbsp;
+      = model.last_name
+    p.page-description
+      |Дата добавления в базу:&nbsp;
+      = model.formatted_created_at
+  .row
+    .page-content
+      .grifter-info
+        .grifter-additional
+          .grifter-image
+            img src=model.photo
+          .grifter-links
+            = if model.skype_id.length
+              .link
+                span.skype_id
+                  i.fa.fa-skype
+                  |&nbsp;
+                  = model.skype_id
+            .link
+              a href="http://vk.com/#{model.vk_screen_name}" target="_blank"
+                i.fa.fa-vk
+                |Профиль
+        .grifter-description
+          h2.text-center Причина добавления
+          p
+            = model.description
+        .clearfix
+
+    .page-sidebar
+      .sidebar-module.sidebar-module-inset
+        button.button-violet.button-block.hint.hint--left data-hint='Функционал в разработке' disabled=true
+          i.fa.fa.fa-shield
+          |Он не мошенник!
+
+    .clearfix

@@ -18,6 +18,17 @@ initialize = (container, application)->
         true
     ).property()
 
+    currentUser: (->
+      id = null
+      Ember.$.ajax
+        type: 'GET'
+        url: "/welcome/current_user_id"
+        async: false
+        success: (data) =>
+          id = data.current_user_id
+      container.lookup('store:main').find('user', id)
+    ).property()
+
 
 CurrentUserInitializer =
   name: 'currentUser'

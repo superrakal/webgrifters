@@ -1,7 +1,7 @@
 .news-box
-  .news Информационная строка
-  .close
-    i.fa.fa-times
+  .news Версия 1.0.5
+  /.close
+  /  i.fa.fa-times
 nav.top-nav
   a.logo.pull-left href="/"
     |webgrifters.ru
@@ -9,6 +9,7 @@ nav.top-nav
     li
       = if session.isLoggedIn
         span.sign_out{action 'sign_out'}
+          img src=session.currentUser.photo
           |Выйти из системы
       = else
         | Для того, чтобы подать жалобу, необходимо&nbsp;
