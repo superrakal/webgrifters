@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/grifters/frontend/node_modules/ember-disable-proxy-controllers/app/controllers/object.js

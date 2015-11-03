@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/grifters/frontend/tmp/funnel-output_path-JXCe6ljc.tmp/ember-data/README.md

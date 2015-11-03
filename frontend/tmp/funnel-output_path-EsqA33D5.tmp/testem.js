@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/grifters/frontend/node_modules/ember-cli/lib/broccoli/testem.js

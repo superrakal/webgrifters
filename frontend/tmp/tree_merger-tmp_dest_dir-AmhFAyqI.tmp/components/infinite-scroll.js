@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/grifters/frontend/tmp/tree_merger-tmp_dest_dir-9cuCwDe3.tmp/components/infinite-scroll.js

@@ -4,7 +4,7 @@
 RootRoute = Ember.Route.extend InfinityRoute,
 
   model: ->
-    @infinityModel("grifter", { perPage: 3, startingPage: 1 })
+    @infinityModel("grifter", { perPage: 5, startingPage: 1 })
 
   setupController: (controller, model) ->
     controller.set 'model', model

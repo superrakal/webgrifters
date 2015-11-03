@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/grifters/frontend/tmp/coffee_script_filter-cache_path-qkqmgp3E.tmp/frontend/tests/unit/models/user-test.js

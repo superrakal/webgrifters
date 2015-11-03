@@ -21986,3 +21986,174 @@ Processing by Api::V1::UsersController#show as JSON
   MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.3572ms
   MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=users selector={"_id"=>BSON::ObjectId('5638a4c7d3054d3c6b000009')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2518ms
 Completed 200 OK in 5ms (Views: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-03 21:32:29 +0600
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.slim within layouts/application (9.1ms)
+WARNING on line 1 of /home/egor/RubymineProjects/grifters/app/assets/stylesheets/global.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 1479ms (Views: 1478.9ms)
+
+
+Started GET "/api/v1/grifters?page=1&per_page=3" for 127.0.0.1 at 2015-11-03 21:32:36 +0600
+Processing by Api::V1::GriftersController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 2.4765ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=grifters_development command={:count=>"grifters", :query=>{}} runtime: 0.2475ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=grifters selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=3 skip=0 batch_size=nil fields=nil runtime: 0.5853ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=grifters selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=3 skip=0 batch_size=nil fields=nil runtime: 0.4706ms
+Completed 200 OK in 22ms (Views: 7.3ms)
+
+
+Started GET "/welcome/current_user_id" for 127.0.0.1 at 2015-11-03 21:32:36 +0600
+Processing by WelcomeController#current_user_id as */*
+Completed 200 OK in 1ms (Views: 0.7ms)
+
+
+Started GET "/api/v1/users/5638a4c7d3054d3c6b000009" for 127.0.0.1 at 2015-11-03 21:32:36 +0600
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"5638a4c7d3054d3c6b000009"}
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=users selector={"_id"=>BSON::ObjectId('5638a4c7d3054d3c6b000009')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4013ms
+Completed 200 OK in 5ms (Views: 1.7ms)
+
+
+Started GET "/welcome/auth_by_vk" for 127.0.0.1 at 2015-11-03 21:32:39 +0600
+Processing by WelcomeController#auth_by_vk as HTML
+Redirected to https://oauth.vk.com/authorize?client_id=4362383&redirect_uri=http%3A%2F%2Fwebgrifters.ru%2Fwelcome%2Fvk_auth_callback&response_type=code&scope=notify%2Cemail%2Cfirst_name%2Clast_name&state=d087826fc8f60e74ab65acd964fc01ab
+Completed 302 Found in 8ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-03 21:33:07 +0600
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.slim within layouts/application (0.1ms)
+Completed 200 OK in 75ms (Views: 74.6ms)
+
+
+Started GET "/api/v1/grifters?page=1&per_page=3" for 127.0.0.1 at 2015-11-03 21:33:07 +0600
+Processing by Api::V1::GriftersController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=grifters_development command={:count=>"grifters", :query=>{}} runtime: 0.4237ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=grifters selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=3 skip=0 batch_size=nil fields=nil runtime: 0.4911ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=grifters selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=3 skip=0 batch_size=nil fields=nil runtime: 0.3760ms
+Completed 200 OK in 7ms (Views: 3.3ms)
+
+
+Started GET "/welcome/current_user_id" for 127.0.0.1 at 2015-11-03 21:33:07 +0600
+Processing by WelcomeController#current_user_id as */*
+Completed 200 OK in 1ms (Views: 0.6ms)
+
+
+Started GET "/api/v1/users/5638a4c7d3054d3c6b000009" for 127.0.0.1 at 2015-11-03 21:33:07 +0600
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"5638a4c7d3054d3c6b000009"}
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=users selector={"_id"=>BSON::ObjectId('5638a4c7d3054d3c6b000009')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5307ms
+Completed 200 OK in 5ms (Views: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-03 21:34:53 +0600
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.slim within layouts/application (12.5ms)
+WARNING on line 1 of /home/egor/RubymineProjects/grifters/app/assets/stylesheets/global.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 200 OK in 1370ms (Views: 1369.5ms)
+
+
+Started GET "/api/v1/grifters?page=2&per_page=3" for 127.0.0.1 at 2015-11-03 21:34:59 +0600
+Processing by Api::V1::GriftersController#index as JSON
+  Parameters: {"page"=>"2", "per_page"=>"3"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5922ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=grifters_development command={:count=>"grifters", :query=>{}} runtime: 0.1593ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=grifters selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=3 skip=3 batch_size=nil fields=nil runtime: 0.4873ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=grifters selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=3 skip=3 batch_size=nil fields=nil runtime: 0.4330ms
+Completed 200 OK in 45ms (Views: 6.4ms)
+
+
+Started GET "/api/v1/grifters?page=1&per_page=3" for 127.0.0.1 at 2015-11-03 21:34:59 +0600
+Processing by Api::V1::GriftersController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5028ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=grifters_development command={:count=>"grifters", :query=>{}} runtime: 0.2532ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=grifters selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=3 skip=0 batch_size=nil fields=nil runtime: 0.5565ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=grifters selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=3 skip=0 batch_size=nil fields=nil runtime: 0.3779ms
+Completed 200 OK in 8ms (Views: 3.3ms)
+
+
+Started GET "/welcome/current_user_id" for 127.0.0.1 at 2015-11-03 21:34:59 +0600
+Processing by WelcomeController#current_user_id as */*
+Completed 200 OK in 1ms (Views: 0.7ms)
+
+
+Started GET "/api/v1/grifters?page=2&per_page=3" for 127.0.0.1 at 2015-11-03 21:34:59 +0600
+Processing by Api::V1::GriftersController#index as JSON
+  Parameters: {"page"=>"2", "per_page"=>"3"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=grifters_development command={:count=>"grifters", :query=>{}} runtime: 0.4368ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=grifters selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=3 skip=3 batch_size=nil fields=nil runtime: 0.7718ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=grifters selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=3 skip=3 batch_size=nil fields=nil runtime: 0.5591ms
+Completed 200 OK in 8ms (Views: 4.3ms)
+
+
+Started GET "/api/v1/users/5638a4c7d3054d3c6b000009" for 127.0.0.1 at 2015-11-03 21:34:59 +0600
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"5638a4c7d3054d3c6b000009"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.2987ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=users selector={"_id"=>BSON::ObjectId('5638a4c7d3054d3c6b000009')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2084ms
+Completed 200 OK in 5ms (Views: 1.4ms)
+
+
+Started GET "/welcome/auth_by_vk" for 127.0.0.1 at 2015-11-03 21:35:03 +0600
+Processing by WelcomeController#auth_by_vk as HTML
+Redirected to https://oauth.vk.com/authorize?client_id=4081089&redirect_uri=http%3A%2F%2Flocal.vcap.me%3A3000%2Fwelcome%2Fvk_auth_callback&response_type=code&scope=notify%2Cemail%2Cfirst_name%2Clast_name&state=2a974aaa092510d5fc9226e46234d2a4
+Completed 302 Found in 5ms
+
+
+Started GET "/welcome/vk_auth_callback?code=edf97bd40818fd8e2f&state=2a974aaa092510d5fc9226e46234d2a4" for 127.0.0.1 at 2015-11-03 21:35:05 +0600
+Processing by WelcomeController#vk_auth_callback as HTML
+  Parameters: {"code"=>"edf97bd40818fd8e2f", "state"=>"2a974aaa092510d5fc9226e46234d2a4"}
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=users selector={"$query"=>{"vk_id"=>"id221246142"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4339ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=grifters_development collection=users selector={"_id"=>BSON::ObjectId('5638a4c7d3054d3c6b000009')} update={"$set"=>{"current_sign_in_at"=>2015-11-03 15:35:05 UTC, "sign_in_count"=>2}} flags=[]
+                         COMMAND      database=grifters_development command={:getlasterror=>1, :w=>1} runtime: 0.2923ms
+Redirected to http://local.vcap.me:3000/
+Completed 302 Found in 348ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-03 21:35:05 +0600
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.slim within layouts/application (0.0ms)
+Completed 200 OK in 63ms (Views: 62.5ms)
+
+
+Started GET "/api/v1/grifters?page=1&per_page=3" for 127.0.0.1 at 2015-11-03 21:35:06 +0600
+Processing by Api::V1::GriftersController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=grifters_development command={:count=>"grifters", :query=>{}} runtime: 0.3171ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5638a4c7d3054d3c6b000009')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3688ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=grifters selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=3 skip=0 batch_size=nil fields=nil runtime: 0.3917ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=grifters selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=3 skip=0 batch_size=nil fields=nil runtime: 0.3214ms
+Completed 200 OK in 7ms (Views: 3.8ms)
+
+
+Started GET "/welcome/current_user_id" for 127.0.0.1 at 2015-11-03 21:35:06 +0600
+Processing by WelcomeController#current_user_id as */*
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5638a4c7d3054d3c6b000009')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3164ms
+Completed 200 OK in 3ms (Views: 0.8ms)
+
+
+Started GET "/api/v1/users/5638a4c7d3054d3c6b000009" for 127.0.0.1 at 2015-11-03 21:35:06 +0600
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"5638a4c7d3054d3c6b000009"}
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=users selector={"_id"=>BSON::ObjectId('5638a4c7d3054d3c6b000009')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3424ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5638a4c7d3054d3c6b000009')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5167ms
+Completed 200 OK in 6ms (Views: 2.4ms)
+
+
+Started GET "/api/v1/grifters?page=2&per_page=3" for 127.0.0.1 at 2015-11-03 21:35:07 +0600
+Processing by Api::V1::GriftersController#index as JSON
+  Parameters: {"page"=>"2", "per_page"=>"3"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=grifters_development command={:count=>"grifters", :query=>{}} runtime: 0.3681ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5638a4c7d3054d3c6b000009')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4342ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=grifters selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=3 skip=3 batch_size=nil fields=nil runtime: 0.3629ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=grifters selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=3 skip=3 batch_size=nil fields=nil runtime: 0.2918ms
+Completed 200 OK in 7ms (Views: 3.6ms)

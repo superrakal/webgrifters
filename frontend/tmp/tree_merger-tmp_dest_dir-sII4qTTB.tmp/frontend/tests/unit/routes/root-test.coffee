@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/grifters/frontend/tests/unit/routes/root-test.coffee

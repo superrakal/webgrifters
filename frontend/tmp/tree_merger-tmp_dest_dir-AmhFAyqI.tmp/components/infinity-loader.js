@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/grifters/frontend/tmp/tree_merger-tmp_dest_dir-CbnPvUv8.tmp/components/infinity-loader.js

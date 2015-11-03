@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/grifters/frontend/tests/unit/models/user-test.coffee
