@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/grifters/frontend/tmp/funnel-output_path-XXH1SnT4.tmp/ember-qunit-notifications/README.md

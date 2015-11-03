@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/grifters/frontend/app/mixins/session.coffee

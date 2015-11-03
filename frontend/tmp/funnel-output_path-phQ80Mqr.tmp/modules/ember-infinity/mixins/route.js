@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/grifters/frontend/node_modules/ember-infinity/addon/mixins/route.js

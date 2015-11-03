@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/grifters/frontend/tmp/reexporter-tmp_cache_dir-EjBUMShB.tmp/reexports/active-model-adapter.js

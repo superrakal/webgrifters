@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/grifters/frontend/tmp/tree_merger-tmp_dest_dir-m1T7RTcX.tmp/initializers/export-application-global.js

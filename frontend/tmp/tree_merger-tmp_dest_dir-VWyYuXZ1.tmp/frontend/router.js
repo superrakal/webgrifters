@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/grifters/frontend/tmp/babel-output_path-PBIF4TAn.tmp/frontend/router.js

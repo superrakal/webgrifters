@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/grifters/frontend/tmp/caching-writer-dest-dir_8Wj39t.tmp/assets/frontend.js

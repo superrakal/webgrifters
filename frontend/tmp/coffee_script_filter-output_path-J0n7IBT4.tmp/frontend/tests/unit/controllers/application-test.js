@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/grifters/frontend/tmp/coffee_script_filter-cache_path-QTy7jX2X.tmp/frontend/tests/unit/controllers/application-test.js

@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/grifters/frontend/tmp/caching-writer-dest-dir_oX84Zz.tmp/assets/vendor.js

@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/grifters/frontend/tmp/class-tmp_cache_dir-BGuBq7JA.tmp/addons.js

@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/grifters/frontend/tmp/tree_merger-tmp_dest_dir-dkyQL4pc.tmp/reexports/active-model-adapter.js

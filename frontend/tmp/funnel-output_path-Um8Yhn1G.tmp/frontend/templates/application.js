@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/grifters/frontend/tmp/template_compiler-tmp_cache_dir-xL8FtnTT.tmp/0

@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/grifters/frontend/tmp/tree_merger-tmp_dest_dir-X39eazA9.tmp/initializers/simple-auth.js

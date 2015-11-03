@@ -1,0 +1,18 @@
+.news-box
+  .news Информационная строка
+  .close
+    i.fa.fa-times
+nav.top-nav
+  a.logo.pull-left href="/"
+    |webgrifters.ru
+  ul.navbar.pull-right
+    li
+      = if session.isLoggedIn
+        span.sign_out{action 'sign_out'}
+          |Выйти из системы
+      = else
+        | Для того, чтобы подать жалобу, необходимо&nbsp;
+        a href="/welcome/auth_by_vk"
+          |войти в систему
+.content-wrapper
+  = outlet

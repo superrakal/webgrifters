@@ -1,0 +1,19 @@
+@import 'variables'
+form
+  .left-column, .right-column
+    width: 48%
+    margin-bottom: 20px
+    .form-group
+      margin-bottom: 0px !important
+  .form-group
+    margin-bottom: 20px
+    textarea
+      resize: none
+      height: 200px
+    &.error_border
+      input, textarea
+        border: 2px solid $red
+  .form-control
+    height: 40px
+    width: 100%
+

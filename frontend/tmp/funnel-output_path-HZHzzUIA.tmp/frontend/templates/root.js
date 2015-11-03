@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/grifters/frontend/tmp/template_compiler-tmp_dest_dir-OcDYKqsR.tmp/frontend/templates/root.js

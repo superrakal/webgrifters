@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/grifters/frontend/tmp/tree_merger-tmp_dest_dir-DCyZdmp5.tmp/initializers/active-model-adapter.js

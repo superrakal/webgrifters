@@ -1,0 +1,56 @@
+.container
+  .page-header
+    h1.page-title Список мошенников в сфере веб-разработки
+    p.page-description Проверьте разработчика, заказчика или добавьте нового "кидалу".
+    .search-box
+      button.button-violet
+        i.fa.fa-search
+      .input-wrapper
+        input type='text' placeholder='Поиск по vk_id, имени и фамилии'
+  .row
+    .page-content
+      .grifters
+        = each model as |grifter|
+          .grifter
+            .image-wrapper
+              img src=grifter.photo
+            h2.grifter-name
+              = grifter.first_name
+              |&nbsp;
+              = grifter.last_name
+            p.grifter-meta
+              = grifter.formatted_created_at
+              |&nbsp;добавил&nbsp;
+              a href="http://vk.com/#{grifter.user.vk_screen_name}" target="_blank"
+                = grifter.user.first_name
+                |&nbsp;
+                = grifter.user.last_name
+            p.grifter-ban-short-info
+              = grifter.short_description
+            hr
+            .additional-links
+              .pull-left
+                button.button-violet.button-small Подробнее
+              .pull-right
+                a href="http://vk.com/#{grifter.vk_screen_name}" target="_blank"
+                  i.fa.fa-vk
+                  |Профиль
+            .clearfix
+      = infinity-loader infinityModel=model loadingText="Идет подгрузка данных..." loadedText="Все данные подгружены"
+
+    .page-sidebar
+      .sidebar-module.sidebar-module-inset
+        = if session.isLoggedIn
+          = link-to 'add'
+            button.button-violet.button-block.button-rounded
+              i.fa.fa-plus
+              |Добавить мошенника
+        = else
+          button.button-violet.button-block.hint.hint--left data-hint='Войдите в систему для подачи жалобы' disabled=true
+            i.fa.fa-plus
+            |Добавить мошенника
+        p.text-center
+          |Прежде чем добавлять мошенника, воспользуйтесь поиском.
+    .clearfix
+
+

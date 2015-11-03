@@ -1,0 +1,50 @@
+@import 'variables'
+button
+  -webkit-transition: background-color .2s,color .2s
+  transition: background-color .2s,color .2s
+  -webkit-transition: color .2s,color .2s
+  transition: color .2s,color .2s
+  &:hover
+    -webkit-transition: background-color .2s,color .2s
+    transition: background-color .2s,color .2s
+    -webkit-transition: color .2s,color .2s
+    transition: color .2s,color .2s
+  cursor: pointer
+  &:focus, &:active
+    outline: none
+  min-height: 40px
+  line-height: 40px
+  text-align: center
+  font-size: 18px
+  i
+    margin-right: 5px
+  &.button-violet
+    background-color: $violet
+    border: 1px solid $violet
+    color: $white
+    &:focus, &:active, &:hover
+      background-color: $white
+      color: $violet
+  &.button-success
+    background-color: $success
+    border: 1px solid $success
+    color: $white
+    &:focus, &:active, &:hover
+      background-color: $success
+      color: $white
+  &.button-small
+    height: 20px
+    padding: 20px
+    line-height: 0px
+    font-size: 14px
+
+      background-color: $violet
+      color: white
+  &.button-block
+    width: 100%
+
+  &:disabled
+    &, &:hover
+      color: black !important
+      background-color: $white
+      border-color: darkgrey

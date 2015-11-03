@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/grifters/frontend/tmp/coffee_script_filter-input_base_path-NON8IMWr.tmp/0/frontend/instance-initializers/app-version.js

@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/grifters/frontend/tmp/jshinter-tmp_cache_dir-Ix4znSOH.tmp/0

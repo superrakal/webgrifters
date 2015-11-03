@@ -1,0 +1,35 @@
+.container
+  .page-header
+    h1.page-title Добавление мошенника
+    p.page-description Подкрепите свои обвинения доказательствами
+  .row
+    .page-content
+      .add-grifter-form
+        form
+          .left-column.pull-left
+            .form-group
+              = input value=model.vk_screen_name class='form-control' type='text' placeholder='vk_id мошенника' disabled=isAdded
+          .right-column.pull-right
+            .form-group
+              = input value=model.skype_id class='form-control' type='text' placeholder='skype_id мошенника' disabled=isAdded
+          .left-column.pull-left
+            .form-group class=model.errors.first_name.length:error_border:normal
+              = input value=model.first_name class='form-control' type='text' placeholder='Имя мошенника *' disabled=isAdded
+          .right-column.pull-right
+            .form-group class=model.errors.last_name.length:error_border:normal
+              = input value=model.last_name class='form-control' type='text' placeholder='Фамилия мошенника *' disabled=isAdded
+          .form-group class=model.errors.description.length:error_border:normal
+            = textarea value=model.description class='form-control' placeholder='Опишите действия кидалы *' disabled=isAdded
+    .page-sidebar
+      .sidebar-module.sidebar-module-inset
+        = if isAdded
+          button.button-success.button-block
+            i.fa.fa-check
+            |Заявка отправлена
+          p.text-center
+            |Принятая заявка будет рассмотренна администрацией сообщества
+        = else
+          button.button-violet.button-block{action 'add'}
+            i.fa.fa-paper-plane
+            |Отправить заявку
+    .clearfix
