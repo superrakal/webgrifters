@@ -7590,3 +7590,42 @@ SourcemapConcat (3)                           | 49ms (16 ms)
 Concat: Test Support JS (1)                   | 32ms                
 TreeMerger (180)                              | 27ms (0 ms)         
 
+file added templates/root.emblem___jb_old___
+file changed templates/root.emblem
+file deleted templates/root.emblem___jb_old___
+
+Build successful - 476ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 122ms               
+Concat: App                                   | 54ms                
+Concat: Test Support JS                       | 29ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 122ms               
+Concat: App (1)                               | 54ms                
+SourcemapConcat (3)                           | 49ms (16 ms)        
+Concat: Test Support JS (1)                   | 29ms                
+TreeMerger (180)                              | 26ms (0 ms)         
+
+file changed templates/root.emblem
+
+Build successful - 489ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 120ms               
+Concat: App                                   | 56ms                
+Concat: Test Support JS                       | 25ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 120ms               
+Concat: App (1)                               | 56ms                
+SourcemapConcat (3)                           | 48ms (16 ms)        
+TemplateCompiler (2)                          | 34ms (17 ms)        
+Concat: Test Support JS (1)                   | 25ms                
+TreeMerger (180)                              | 24ms (0 ms)         
+

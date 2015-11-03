@@ -22410,3 +22410,39 @@ Processing by Api::V1::GriftersController#index as JSON
   MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=grifters selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=5 skip=5 batch_size=nil fields=nil runtime: 0.4613ms
   MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=grifters selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=5 skip=5 batch_size=nil fields=nil runtime: 0.3560ms
 Completed 200 OK in 6ms (Views: 2.9ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.3059ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=grifters_development command={:count=>"grifters", :query=>{}} runtime: 0.1616ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=grifters selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3505ms
+  MOPED: 127.0.0.1:27017 DELETE       database=grifters_development collection=grifters selector={"_id"=>BSON::ObjectId('5638aaf0d3054d4be4000000')} flags=[:remove_first]
+                         COMMAND      database=grifters_development command={:getlasterror=>1, :w=>1} runtime: 0.2179ms
+  MOPED: 127.0.0.1:27017 DELETE       database=grifters_development collection=grifters selector={"_id"=>BSON::ObjectId('5638ad54d3054d4f7e000000')} flags=[:remove_first]
+                         COMMAND      database=grifters_development command={:getlasterror=>1, :w=>1} runtime: 0.1733ms
+  MOPED: 127.0.0.1:27017 DELETE       database=grifters_development collection=grifters selector={"_id"=>BSON::ObjectId('5638b034d3054d517d000000')} flags=[:remove_first]
+                         COMMAND      database=grifters_development command={:getlasterror=>1, :w=>1} runtime: 0.1683ms
+  MOPED: 127.0.0.1:27017 DELETE       database=grifters_development collection=grifters selector={"_id"=>BSON::ObjectId('5638b04bd3054d517d000001')} flags=[:remove_first]
+                         COMMAND      database=grifters_development command={:getlasterror=>1, :w=>1} runtime: 0.1767ms
+  MOPED: 127.0.0.1:27017 DELETE       database=grifters_development collection=grifters selector={"_id"=>BSON::ObjectId('5638b0c1d3054d532e000000')} flags=[:remove_first]
+                         COMMAND      database=grifters_development command={:getlasterror=>1, :w=>1} runtime: 0.1817ms
+  MOPED: 127.0.0.1:27017 DELETE       database=grifters_development collection=grifters selector={"_id"=>BSON::ObjectId('5638b0cdd3054d532e000001')} flags=[:remove_first]
+                         COMMAND      database=grifters_development command={:getlasterror=>1, :w=>1} runtime: 0.1845ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-03 21:47:13 +0600
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.slim within layouts/application (0.1ms)
+Completed 200 OK in 92ms (Views: 92.0ms)
+
+
+Started GET "/api/v1/grifters?page=1&per_page=5" for 127.0.0.1 at 2015-11-03 21:47:14 +0600
+Processing by Api::V1::GriftersController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.3810ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=grifters_development command={:count=>"grifters", :query=>{}} runtime: 0.2668ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=grifters selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=5 skip=0 batch_size=nil fields=nil runtime: 0.3388ms
+  MOPED: 127.0.0.1:27017 QUERY        database=grifters_development collection=grifters selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=5 skip=0 batch_size=nil fields=nil runtime: 0.1922ms
+Completed 200 OK in 7ms (Views: 2.1ms)
+
+
+Started GET "/welcome/current_user_id" for 127.0.0.1 at 2015-11-03 21:47:14 +0600
+Processing by WelcomeController#current_user_id as */*
+Completed 200 OK in 2ms (Views: 1.0ms)
